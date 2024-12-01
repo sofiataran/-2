@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Третья страница</title>
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+          integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" rel="stylesheet">
+    <style>
+       body {
+            font-family: DejaVu Sans Mono, monospace;
+            line-height: 1.5;
+            background-color: #E6E6FA;
+        } 
+        .nav-item {
+            width: auto;  
+            height: 55px;
+            cursor: pointer;
+            padding: 5px;
+            border: 2px solid#E6E6FA;
+            border-radius: 15px;
+            margin: 5px;
+        }
+        table {
+            border-spacing: 0;
+            empty-cells: hide;
+            width:100%;
+            }
+        td {
+            padding: 10px 20px;
+            text-align: center;
+            border-bottom: 1px solid #F4EEE8;
+            transition: all 0.5s linear;
+            }
+        td:first-child {
+            text-align: left;
+            color: #3D3511;
+            font-weight: bold;
+            }
+        th {
+            padding: 10px 20px;
+            color: #3D3511;
+            border-bottom: 1px solid #F4EEE8;
+            }
+        td:nth-child(even) {
+            background: #E6E6FA;
+            }
+        td:nth-child(odd) {
+            background: #8a8abc;
+            }
+        th:nth-child(even)  {
+            background: #E6E6FA;
+            }
+        th:nth-child(odd)  {
+            background: #8a8abc;
+            }
+        tr:hover td{
+            background: #8a8abc;
+            font-weight: bold;
+            }
+    </style>
+
+</head>
+
+<body>
+
+
+<div class="container">
+
+    <header class="card" style="height: 3.rem; background-image: url(./img/фон1.jpg);">
+        <div class="card-body bg-color">
+            <img height="100px" src="./img/офис_лого.jpg">
+        </div>
+    </header>
+
+    <div class="card">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"> <a class="nav-link" href="./index.html">Информационная страница</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="./merch.html">Мерч</a></li>
+                    <li class="nav-item"> <a class="nav-link active" href="./table.html">Таблица</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="./order.html">Оформление заказа</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="https://officeserial.ru/" target="_blank">Смотреть сериал</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="https://ru.wikipedia.org/wiki/Офис_(телесериал,_США)" target="_blank"><img height="25px" src ="./img/вики_фото.jpg"></a></li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+    </div>
+    
+    <div class="card">
+        <div class="card-body"><!--начало уникального содержания-->
+            <h5 class='card-title text-center' id='top_of_page'>Таблица</h5>
+
+            <p class="card-text">
+                <div class="card-body">
+                    <table class="zebra">
+
+            <p class="card-text">
+                <div class="card-body">
+                    <table class="zebra">
+                    <tr>
+                      <th></th>
+                      <th>США</th>
+                      <th>Великобритания</th>
+                      <th>Канада</th>
+                      <th>Россия</th>
+                      </tr>
+                     <tr>
+                      <td>Сезон 1</td>
+                      <td>4 млн.</td>
+                      <td>2 млн.</td>
+                      <td>3 млн.</td>
+                      <td>1.5 млн.</td>
+                     </tr>
+                    <tr>
+                      <td>Сезон 2</td>
+                      <td>6 млн.</td>
+                      <td>3 млн.</td>
+                      <td>3.4 млн.</td>
+                      <td>2 млн.</td>
+                    </tr>
+                    <tr>
+                      <td>Сезон 3</td>
+                      <td>6.5 млн.</td>
+                      <td>5 млн.</td>
+                      <td>4 млн.</td>
+                      <td>2.5 млн.</td>
+                    </tr>
+                    <tr>
+                      <td>Сезон 4</td>
+                      <td>7 млн.</td>
+                      <td>5.5 млн.</td>
+                      <td>5 млн.</td>
+                      <td>3 млн.</td>
+                    </tr>
+                    <tr>
+                        <td>Сезон 5</td>
+                        <td>8.3 млн.</td>
+                        <td>6 млн.</td>
+                        <td>6.4 млн.</td>
+                        <td>3.5 млн.</td>
+                      </tr>
+                      <tr>
+                        <td>Сезон 6</td>
+                        <td>9 млн.</td>
+                        <td>7 млн.</td>
+                        <td>6.5 млн.</td>
+                        <td>5 млн.</td>
+                      </tr>
+                      <tr>
+                        <td>Сезон 7</td>
+                        <td>8.7 млн.</td>
+                        <td>8 млн.</td>
+                        <td>7 млн.</td>
+                        <td>5.2 млн.</td>
+                      </tr>
+                      <tr>
+                        <td>Сезон 8</td>
+                        <td>8 млн.</td>
+                        <td>6 млн.</td>
+                        <td>5 млн.</td>
+                        <td>5 млн.</td>
+                      </tr>
+                      <tr>
+                        <td>Сезон 9</td>
+                        <td>8.1 млн.</td>
+                        <td>7 млн.</td>
+                        <td>4.5 млн.</td>
+                        <td>4.5 млн.</td>
+                      </tr>
+                    </table>
+            </p>
+            
+        </div><!--окончание уникального содержания-->
+    </div>
+
+    <div class="card">
+        <div class="card-body">
+            Нашли ошибку или хотите что-то добавить? Присылайте письма на почту dunder_mifflin.memes@gmail.ru
+        </div>
+    </div>
+
+</div>
+
+
+<script crossorigin="anonymous"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

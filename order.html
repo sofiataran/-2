@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Четвертая страница</title>
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+          integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" rel="stylesheet">
+    <style>
+       body {
+            font-family: DejaVu Sans Mono, monospace;
+            line-height: 1.5;
+            background-color: #E6E6FA;
+        } 
+        .nav-item {
+            width: auto;  
+            height: 55px;
+            cursor: pointer;
+            padding: 5px;
+            border: 2px solid#E6E6FA;
+            border-radius: 15px;
+            margin: 5px;
+        }
+        form {
+            border: 2px solid #E6E6FA;
+            border-radius: 10px;
+            padding: 20px;
+            width: 400px;
+            margin: 20px auto;
+        }
+
+        form p {
+            margin-bottom: 15px;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="number"],
+        input[type="date"],
+        select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        input[type="submit"], 
+        input[type="reset"] {
+            font-weight: bold; 
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 48%;
+        }
+
+        input[type="submit"] {
+            background-color: #babaf7; 
+            color: black;
+            margin-right: 10%; 
+            margin-top: 5px;
+        }
+
+        input[type="reset"] {
+            background-color: #d2d2e9; 
+            color: white;
+            margin-bottom: 5px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #8686c8; 
+        }
+
+        input[type="reset"]:hover {
+            background-color: #6e6e83; 
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+<div class="container">
+
+    <header class="card" style="height: 3.rem; background-image: url(./img/фон1.jpg);">
+        <div class="card-body bg-color">
+            <img height="100px" src="./img/офис_лого.jpg">
+        </div>
+    </header>
+
+    <div class="card">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"> <a class="nav-link" href="./index.html">Информационная страница</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="./merch.html">Мерч</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="./table.html">Таблица</a></li>
+                    <li class="nav-item"> <a class="nav-link active" href="./order.html">Оформление заказа</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="https://officeserial.ru/" target="_blank">Смотреть сериал</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="https://ru.wikipedia.org/wiki/Офис_(телесериал,_США)" target="_blank"><img height="25px" src ="./img/вики_фото.jpg"></a></li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+    </div>
+    
+    <div class="card">
+        <div class="card-body"><!--начало уникального содержания-->
+            <h5 class='card-title text-center' id='top_of_page'>Оформление покупки фанатского мерча</h5>
+
+            <p class="card-text">
+                <form action="https://www.bing.com/search?" id="UserEnter" name="UserEnter" target="_blank">
+
+                    <p><b>Для оформления:</b><input type="hidden" name="q" value="order data"></p>
+                
+                    <p><b>Фамилия:</b><input type="text" name="second_name" size=20 value="Таран"></p>
+                
+                    <p><b>Имя:</b><input type="text" name="first_name" size=20 value="Софья"></p>
+                
+                    <p><b>Товар:</b>
+                        <select id="product" name="product_name">
+                            <option value="dwight_bobblehead">Фигурка Дуайта</option>
+                            <option value="dunder_mifflin_mug">Кружка Майкла</option>
+                            <option value="dunder_mifflin_tshirt">Футболка Dunder Mifflin</option>
+                        </select>
+                    </p>
+                
+                    <p><b>Количество:</b><input type="number" name="group" size=20 value="1"></p>
+                
+                    <p><b>Адрес доставки:</b><input type="text" name="adress" size=20 value="СПб"></p>
+                
+                    <p><b>Тип доставки:</b><br>
+                        <input type="radio" name="delivery" value="Basic" checked>Стандартная доставка<br>
+                        <input type="radio" name="delivery" value="Express">Экспресс-доставка <br>
+                    </p>
+                
+                    <p><b>Дополнительные товары:</b><br>
+                        <input type="checkbox" name="services" value="present">Подарочная упаковка <br> 
+                        <input type="checkbox" name="services" value="postcard"checked>Открытка с пожеланиями <br>
+                        <input type="checkbox" name="services" value="confetti" checked>Конфетти <br>
+                        <input type="checkbox" name="services" value="nothing">Ничего <br>
+                    </p>
+                
+                    <p><b>Дата оформления заказа:</b><input type="date" name="user_date" value="2024-11-30"></p>
+                
+                    <p><b>Введите пароль для подтверждения заказа:</b><input type="password" name="password" size=9 value="1234"></p>
+                
+                    <p>
+                        <input type="reset" name="Reset" value="Сбросить данные"> 
+                        <input type="submit" name="submit" value="Отправить данные">
+                    </p>                
+            </p>
+            
+        </div><!--окончание уникального содержания-->
+    </div>
+
+    <div class="card">
+        <div class="card-body">
+            Нашли ошибку или хотите что-то добавить? Присылайте письма на почту dunder_mifflin.memes@gmail.ru
+        </div>
+    </div>
+
+</div>
+
+
+<script crossorigin="anonymous"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
