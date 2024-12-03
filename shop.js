@@ -10,21 +10,6 @@ function sort(){
       getResponce1()}
 }
 
-function search(){
-
-
-
-
-
-  if(price.checked){
-      document.getElementById('node_for_insert').innerHTML = '';
-      getResponce()}
-
-  if(title.checked){
-      document.getElementById('node_for_insert').innerHTML = '';
-      getResponce1()}
-}
-
 
 
 async function getResponce() {
@@ -56,18 +41,6 @@ async function getResponce() {
               );
           });
   */
- content_filter=[]
-  let word=document.getElementById('search').value.toLowerCase();
- //let word = 'search'.toLowerCase();
-  content_filter= content_price.filter((product) =>{
-      return (
-                  product.title.toLowerCase().includes(word) ||
-                  product.description.toLowerCase().includes(word) ||
-                  product.price.toString().includes(word)
-              );
-
-  });
-  console.log(content_filter);
 
   let node_for_insert = document.getElementById("node_for_insert")
   //node_for_insert.innerHTML='';
@@ -119,18 +92,7 @@ async function getResponce1() {
   });
 
 
-  content_filter=[]
-  let word=document.getElementById('search').value.toLowerCase();
- //let word = 'search'.toLowerCase();
-  content_filter= content_title.filter((product) =>{
-      return (
-                  product.title.toLowerCase().includes(word) ||
-                  product.description.toLowerCase().includes(word) ||
-                  product.price.toString().includes(word)
-              );
 
-  });
-  console.log(content_filter);
 
   //node_for_insert.innerHTML='';
   let node_for_insert = document.getElementById("node_for_insert")
