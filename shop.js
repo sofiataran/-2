@@ -13,13 +13,14 @@ function sort() {
     }
 }
 
+
+
 async function getResponce() {
     let responce = await fetch("shop.json");
     let content = await responce.text();
     content = JSON.parse(content);
     content = content.splice(0, 6);
 
-    // Сортировка по цене
     let content_price = content.sort((a, b) => a.price - b.price);
 
     let node_for_insert = document.getElementById("node_for_insert");
@@ -36,13 +37,14 @@ async function getResponce() {
     }
 }
 
+
+
 async function getResponce1() {
     let responce = await fetch("shop.json");
     let content = await responce.text();
     content = JSON.parse(content);
     content = content.splice(0, 6);
 
-    // Сортировка по названию
     let content_title = content.sort((a, b) => {
         const nameA = a.title.toUpperCase();
         const nameB = b.title.toUpperCase();
