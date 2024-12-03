@@ -10,20 +10,6 @@ function sort(){
       getResponce1()}
 }
 
-function search(){
-
-
-
-
-
-  if(price.checked){
-      document.getElementById('node_for_insert').innerHTML = '';
-      getResponce()}
-
-  if(title.checked){
-      document.getElementById('node_for_insert').innerHTML = '';
-      getResponce1()}
-}
 
 
 
@@ -44,34 +30,10 @@ async function getResponce() {
   }*/
   content_price=content.sort((a, b) => a.price - b.price);
 
-  /*
-   products: []
-   filteredProducts: []
-   const query = this.searchQuery.toLowerCase();
-          this.filteredProducts = this.products.filter(product => {
-              return (
-                  product.title.toLowerCase().includes(query) ||
-                  product.description.toLowerCase().includes(query) ||
-                  product.price.toString().includes(query)
-              );
-          });
-  */
- content_filter=[]
-  let word=document.getElementById('search').value.toLowerCase();
- //let word = 'search'.toLowerCase();
-  content_filter= content_price.filter((product) =>{
-      return (
-                  product.title.toLowerCase().includes(word) ||
-                  product.description.toLowerCase().includes(word) ||
-                  product.price.toString().includes(word)
-              );
-
-  });
-  console.log(content_filter);
 
   let node_for_insert = document.getElementById("node_for_insert")
   //node_for_insert.innerHTML='';
-  for (key in content_filter) {
+  for (key in content_price) {
               node_for_insert.innerHTML += `
               <li style="width: 310px" class="d-flex flex-column m-1 p-1 border bg-body">
               <img style="width: 180px" class="align-self-center" src=${content_filter[key].img}>
@@ -119,22 +81,9 @@ async function getResponce1() {
   });
 
 
-  content_filter=[]
-  let word=document.getElementById('search').value.toLowerCase();
- //let word = 'search'.toLowerCase();
-  content_filter= content_title.filter((product) =>{
-      return (
-                  product.title.toLowerCase().includes(word) ||
-                  product.description.toLowerCase().includes(word) ||
-                  product.price.toString().includes(word)
-              );
-
-  });
-  console.log(content_filter);
-
   //node_for_insert.innerHTML='';
   let node_for_insert = document.getElementById("node_for_insert")
-  for (key in content_filter) {
+  for (key in content_title) {
               node_for_insert.innerHTML += `
               <li style="width: 310px" class="d-flex flex-column m-1 p-1 border bg-body">
               <img style="width: 180px" class="align-self-center" src=${content_filter[key].img}>
