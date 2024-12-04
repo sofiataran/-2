@@ -32,7 +32,7 @@ async function getResponce() {
                 <h5 class="card-title">${content_price[key].title}</h5>
                 <p class="card-text">${content_price[key].description}. Цена ${content_price[key].price} р.</p>
                 <input type="hidden" name="vendor_code" value=${content_price[key].vendor_code}>
-                <p class="card-text">!!Заказать!! <input class="w-25" type="text" value="0" name="check"></p>
+                <p class="card-text">!!Заказать!! <input class="w-25" type="number" value="0" name="check" min="0"></p>
             </li>`;
     }
 }
@@ -60,7 +60,7 @@ async function getResponce1() {
                 <h5 class="card-title">${content_title[key].title}</h5>
                 <p class="card-text">${content_title[key].description}. Цена ${content_title[key].price} р.</p>
                 <input type="hidden" name="vendor_code" value=${content_title[key].vendor_code}>
-                <p class="card-text">!!Заказать!! <input class="w-25" type="text" value="0" name="check"></p>
+                <p class="card-text">!!Заказать!! <input class="w-25" type="number" value="0" name="check" min="0"></p>
             </li>`;
     }
 }
